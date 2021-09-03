@@ -13,8 +13,8 @@
     "dictionaries": ["jsdoc", "closure"]
   },
   "templates": {
-    "name": "COMPONENT",
-    "footerText": "COMPONENT",
+    "name": "KissGrafik",
+    "footerText": "KissGrafik",
     "cleverLinks": false,
     "monospaceLinks": false
   },

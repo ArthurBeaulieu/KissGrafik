@@ -6,7 +6,7 @@ const loaders = require('./loaders');
 const plugins = require('./plugins');
 
 module.exports = {
-  entry: ['./src/js/COMPONENT.js'],
+  entry: ['./src/js/KissGrafik.js'],
   module: {
     rules: [
       loaders.JSLoader,
@@ -14,11 +14,11 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'COMPONENT.bundle.js',
+    filename: 'KissGrafik.bundle.js',
     path: path.resolve(__dirname, '../dist'),
-    library: 'COMPONENT', // We set a library name to bundle the export default of the class
-    libraryTarget: 'window', // Make it globally available
-    libraryExport: 'default' // Make COMPONENT.default become COMPONENT
+    library: 'KissGrafik', // We set a library name to bundle the export default of the class
+    libraryTarget: 'global', // Make it globally available
+    libraryExport: 'default' // Make KissGrafik.default become KissGrafik
   },
   plugins: [
     new webpack.ProgressPlugin(),
