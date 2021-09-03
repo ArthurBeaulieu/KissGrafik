@@ -57,10 +57,6 @@ class CanvasUtils {
 					ctx.textAlign = 'center';
 				} else {
 					ctx.textAlign = 'right';
-					if (textMiddle.y < 0) {
-						textMiddle.x -= options.style.fontSize / 2;
-						textMiddle.y -= options.style.fontSize / 2;
-					}
 				}
 
 				ctx.strokeStyle = colors[i];
@@ -80,7 +76,6 @@ class CanvasUtils {
 
 
 	static colorPalette(length) {
-		// TODO theme
 		const colors = ['#91d900', '#2592d5', '#e70606', '#ec9e45', '#00b050', '#f4ed50', '#f4c3fb', '#b0b0b0', '#f2d9a5'];		
 		return colors.slice(0, length);
 	}
